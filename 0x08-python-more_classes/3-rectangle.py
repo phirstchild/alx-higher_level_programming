@@ -3,10 +3,10 @@
 
 
 class Rectangle:
-    """Represent the new rectangle."""
+    """Represent a rectangle."""
 
     def __init__(self, width=0, height=0):
-        """Initialize the rectangle.
+        """Initialize a new rectangle.
 
         Args:
         width (int): width of the new rectangle.
@@ -47,16 +47,16 @@ class Rectangle:
 
     def perimeter(self):
         """Return the perimeter of the rectangle"""
-        if self.__width = 0 or self.__height = 0:
+        if self.__width == 0 or self.__height == 0:
             return (0)
-        return((self.__width * 2) + (self.__height * 2))
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
         """Return the printable representation of the rectangle
 
         Represent the rectangle with the # character
         """
-        if self.__width = 0 or self.__height = 0:
+        if self.__width == 0 or self.__height == 0:
             return ("")
 
         rect = []
@@ -65,7 +65,3 @@ class Rectangle:
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
-
-
-        
-
