@@ -48,7 +48,7 @@ def get_solution(chess_board):
 
 def xout(chess_board, row, col):
     """All spots where non-attacking queens can no
-    longer be played are masked out with X
+    longer be played are masked out with X.
 
     Args:
         chess_board (list): my current chessboard.
@@ -106,7 +106,7 @@ def recursive_solve(chess_board, row, queens, chess_solutions):
         queens (int): My current number of placed queens.
         chess_solutions (list): My list of lists of solutions.
     Returns:
-        chess_solutions
+        chess_solutions.
     """
     if queens == len(chess_board):
         chess_solutions.append(get_solution(chess_board))
