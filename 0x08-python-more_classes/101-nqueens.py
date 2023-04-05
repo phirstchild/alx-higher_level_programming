@@ -35,9 +35,9 @@ def solveQueensNUtil(board, row, N):
 
     # Try placing queen in each column of current row
     for col in range(N):
-        if isSafe(board, row, col, N):
+        if Safeif(board, row, col, N):
             board[row][col] = 1
-            solveNQueensUtil(board, row+1, N)
+            solveQueensNUtil(board, row+1, N)
             board[row][col] = 0
 
     return False
@@ -67,4 +67,4 @@ if N < 4:
     sys.exit(1)
 
 # Solve N queens problem
-solveNQueens(N)
+solveQueensN(N)
