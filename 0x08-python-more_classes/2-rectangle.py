@@ -12,7 +12,6 @@ class Rectangle:
         width (int): width of the new rectangle.
         height (int): height of the new rectangle.
         """
-
         self.width = width
         self.height = height
 
@@ -51,5 +50,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
-
-       
