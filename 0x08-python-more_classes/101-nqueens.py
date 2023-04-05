@@ -20,7 +20,7 @@ queen must be placed on the chessboard.
 import sys
 
 
-def init_board(n):
+def init_bord(n):
     """Initialize an `n`x`n` sized chessboard with 0's."""
     board = []
     [board.append([]) for i in range(n)]
@@ -28,14 +28,14 @@ def init_board(n):
     return (board)
 
 
-def board_deepcopy(board):
+def bord_deepcopy(board):
     """Return a deepcopy of a chessboard."""
     if isinstance(board, list):
         return list(map(board_deepcopy, board))
     return (board)
 
 
-def get_solution(board):
+def get_solut(board):
     """Return the list of lists representation of a solved chessboard."""
     solution = []
     for r in range(len(board)):
@@ -46,7 +46,7 @@ def get_solution(board):
     return (solution)
 
 
-def xout(board, row, col):
+def x_out(board, row, col):
     """X out spots on a chessboard.
 
     All spots where non-attacking queens can no
@@ -99,7 +99,7 @@ def xout(board, row, col):
         c -= 1
 
 
-def recursive_solve(board, row, queens, solutions):
+def recursive_solv(board, row, queens, solutions):
     """Recursively solve an N-queens puzzle.
 
     Args:
