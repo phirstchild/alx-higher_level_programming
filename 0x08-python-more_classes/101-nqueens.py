@@ -3,7 +3,7 @@
 import sys
 
 # Define function to check if a given position is safe for a queen
-def Safeif(board, row, col, N):
+def isSafe(board, row, col, N):
     # Check if there is a queen in the same column
     for i in range(row):
         if board[i][col] == 1:
@@ -22,12 +22,12 @@ def Safeif(board, row, col, N):
     return True
 
 # Define function to solve N queens problem
-def solveQueensN(N):
+def solveNQueens(N):
     board = [[0 for x in range(N)] for y in range(N)]
-    solveQueensNUtil(board, 0, N)
+    solveNQueensUtil(board, 0, N)
 
 # Define recursive function to solve N queens problem
-def solveQueensNUtil(board, row, N):
+def solveNQueensUtil(board, row, N):
     # Base case: all queens have been placed
     if row == N:
         printBoard(board)
@@ -35,15 +35,15 @@ def solveQueensNUtil(board, row, N):
 
     # Try placing queen in each column of current row
     for col in range(N):
-        if Safeif(board, row, col, N):
+        if isSafe(board, row, col, N):
             board[row][col] = 1
-            solveQueensNUtil(board, row+1, N)
+            solveNQueensUtil(board, row+1, N)
             board[row][col] = 0
 
     return False
 
 # Define function to print the board
-def prntBoard(board):
+def printBoard(board):
     N = len(board)
     for i in range(N):
         for j in range(N):
@@ -67,4 +67,4 @@ if N < 4:
     sys.exit(1)
 
 # Solve N queens problem
-solveQueensN(N)
+solveNQueens(N)
