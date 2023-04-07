@@ -1,0 +1,10 @@
+98
+100
+98
+b must be an integer
+a must be an integer
+1 items had no tests:
+    0-main
+0 tests in 1 items.
+0 passed and 0 failed.
+Test passed.
