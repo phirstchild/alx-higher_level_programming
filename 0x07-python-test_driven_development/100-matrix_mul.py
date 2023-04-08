@@ -30,11 +30,11 @@ def matrix_mul(m_m, m_n):
     if not all(isinstance(row, list) for row in m_m):
         raise TypeError("m_m must be a list of lists")
     if not all(isinstance(row, list) for row in m_n):
-        raise TypeError("m_b must be a list of lists")
+        raise TypeError("m_n must be a list of lists")
 
     if not all((isinstance(ele, int) or isinstance(ele, float))
                for ele in [num for row in m_m for num in row]):
-        raise TypeError("m_a should contain only integers or floats")
+        raise TypeError("m_m should contain only integers or floats")
     if not all((isinstance(ele, int) or isinstance(ele, float))
                for ele in [num for row in m_n for num in row]):
         raise TypeError("m_n should contain only integers or floats")
