@@ -17,7 +17,7 @@ Usage
 
 ::
 
-    >>> say_my_name("Tunde, "Joseph", "Oloyede")
+    >>> say_my_name("Tunde Joseph", "Oloyede")
     My name is Tunde Joseph Oloyede
 
 The parameter ```last_name``` is optional. If no last name is provided,
