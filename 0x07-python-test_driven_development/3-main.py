@@ -8,6 +8,6 @@ try:
     say_my_name(12, "White")
 except Exception as e:
     print(e)
-    if __name__ == "__main__":
+if __name__ == "__main__":
     import doctest
     doctest.testmod()
