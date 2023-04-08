@@ -7,3 +7,6 @@ matrix = [
 ]
 print(matrix_divided(matrix, 3))
 print(matrix)
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
