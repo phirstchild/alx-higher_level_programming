@@ -44,7 +44,7 @@ def matrix_mul(m_m, m_n):
     if not all(len(row) == len(m_n[0]) for row in m_n):
         raise TypeError("each row of m_n must should be of the same size")
 
-    if len(m_a[0]) != len(m_n):
+    if len(m_m[0]) != len(m_n):
         raise ValueError("m_m and m_n can't be multiplied")
 
     inverted_b = []
