@@ -11,7 +11,7 @@ class Student:
         Args:
             first_name (str): first name of the student.
             last_name (str): last name of the student.
-            age (int): Age of the student.
+            age (int): age of the student.
         """
         self.first_name = first_name
         self.last_name = last_name
@@ -28,5 +28,5 @@ class Student:
         """
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
-            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+            return {p: getattr(self, p) for p in attrs if hasattr(self, p)}
         return self.__dict__
