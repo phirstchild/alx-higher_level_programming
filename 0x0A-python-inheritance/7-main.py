@@ -22,5 +22,5 @@ except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
 
     if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+	import doctest
+    	doctest.testmod()
