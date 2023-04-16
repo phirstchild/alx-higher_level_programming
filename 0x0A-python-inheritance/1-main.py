@@ -12,4 +12,4 @@ my_list.print_sorted()
 print(my_list)
 if __name__ == "__main__":
     import doctest
-    doctest.testmode("new.txt")
+    doctest.testmod()
