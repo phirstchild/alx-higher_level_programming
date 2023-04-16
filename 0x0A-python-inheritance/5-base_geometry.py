@@ -2,7 +2,6 @@
 """Defines a class BaseGeometry."""
 
 
-
-def class BaseGeometry:
+class BaseGeometry:
     """Represents the class base geometry"""
     pass
