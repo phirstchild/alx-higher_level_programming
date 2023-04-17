@@ -1,5 +1,5 @@
 0x0C. Python - Almost a circle
-This project covers all concept learnt in python
+project covers all concept learnt in python
 Import
 Exceptions
 Class
